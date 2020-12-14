@@ -1,0 +1,135 @@
+body {
+  margin: 0px;
+}
+
+body * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: #272A31;
+}
+
+.container {
+  background-image: url(../img/whitebackground.png);
+  background-position: center;
+  background-size: cover;
+  background-color: #D3D3D3;
+  height: 25vh;
+  margin: 0;
+  padding: 0;
+}
+
+.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: #272A31;
+  width: 100%;
+}
+
+.top ul {
+  margin-right: 3rem;
+  display: none;
+}
+
+.top li {
+  display: inline;
+  margin: 0 0.7rem;
+  font-size: 0.7rem;
+}
+
+.top li a {
+  color: #fff;
+}
+
+.bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1.5rem;
+}
+
+.bottom #toggle {
+  display: none;
+}
+
+.bottom label {
+  font-size: 3rem;
+  color: #272A31;
+  line-height: 70px;
+}
+
+.bottom ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+.bottom ul li {
+  padding: 1rem;
+}
+
+.bottom ul li a {
+  color: inherit;
+  font-weight: bold;
+  font-size: 1.7rem;
+}
+
+.bottom #toggle:checked + ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main header {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+}
+
+main header h3 {
+  color: #EC5242;
+  text-align: center;
+}
+
+main header h1 {
+  color: #BB0004;
+  font-size: 2.5rem;
+  width: 90%;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+main header div {
+  margin: 2rem auto;
+  width: 90%;
+  height: 30%;
+  background-color: #f4f4f4;
+}
+
+main header div p {
+  text-align: center;
+  padding: 1rem;
+  line-height: 1.7;
+}
+/*# sourceMappingURL=style.css.map */
