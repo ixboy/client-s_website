@@ -352,8 +352,8 @@ main .second div p {
   width: 90%;
   background-color: #D3D3D3;
   margin: 0 auto;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(236, 82, 66, 0)), to(#ec5242)), url("/img/computer.jpg");
-  background-image: linear-gradient(to top, rgba(236, 82, 66, 0), #ec5242), url("/img/computer.jpg");
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(236, 82, 66, 0)), to(#ec5242)), url(./img/computer.jpg);
+  background-image: linear-gradient(to top, rgba(236, 82, 66, 0), #ec5242), url(./img/computer.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
