@@ -321,17 +321,29 @@ main .second div p {
   width: 90px;
 }
 
+.formSection {
+  background-color: #D3D3D3;
+}
+
 #details {
   width: 90%;
   background-color: #D3D3D3;
   margin: 1rem auto;
-  background-image: url("/img/computer.jpg");
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(236, 82, 66, 0)), to(#ec5242)), url("/img/computer.jpg");
+  background-image: linear-gradient(to top, rgba(236, 82, 66, 0), #ec5242), url("/img/computer.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
 #details * {
-  margin: 1rem 0rem 0rem 1rem;
+  margin: 1rem 0 0 1rem;
+  color: #D3D3D3;
+}
+
+#details form input[type="email"], #details input, #details #services, #details textarea {
+  width: 80%;
+  margin-bottom: 5px;
+  background-color: #421a16;
 }
 /*# sourceMappingURL=style.css.map */
