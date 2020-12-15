@@ -197,10 +197,15 @@ main{
         }
     }
 
-    .featured{
+    .ourServices{
+        
+        aside{
+            display: flex;
+        }
 
         div{
-            margin: 1rem;
+            margin: 1rem 0 0 0;
+            padding-bottom: 1rem;
 
             img{
                 width: 90px;
@@ -299,17 +304,18 @@ main{
 
 .formSection{
     background-color: $grayish;
+    padding: 2rem;
 }
 
 #details{
     width: 90%;
     background-color: $grayish;
-    margin: 1rem auto;
+    margin: 0 auto;
     background-image: linear-gradient(to top, rgba(236,82,66,0),  rgba(236,82,66,1)), url("/img/computer.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    // background-position: 50%, 0 0;
+
     & *{
         margin: 1rem 0 0 1rem;
         color: $grayish;
@@ -317,6 +323,6 @@ main{
     form input[type="email"], input, #services, textarea{
         width:80%;
         margin-bottom:5px;
-        background-color:  rgb(66, 26, 22);
+        background-color: $primary;
       }
 }

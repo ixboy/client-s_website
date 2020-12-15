@@ -229,11 +229,18 @@ main .showcase div h5 :last-of-type {
   color: #272A31;
 }
 
-main .featured div {
-  margin: 1rem;
+main .ourServices aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-main .featured div img {
+main .ourServices div {
+  margin: 1rem 0 0 0;
+  padding-bottom: 1rem;
+}
+
+main .ourServices div img {
   width: 90px;
 }
 
@@ -323,12 +330,13 @@ main .second div p {
 
 .formSection {
   background-color: #D3D3D3;
+  padding: 2rem;
 }
 
 #details {
   width: 90%;
   background-color: #D3D3D3;
-  margin: 1rem auto;
+  margin: 0 auto;
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(236, 82, 66, 0)), to(#ec5242)), url("/img/computer.jpg");
   background-image: linear-gradient(to top, rgba(236, 82, 66, 0), #ec5242), url("/img/computer.jpg");
   background-position: center;
@@ -344,6 +352,6 @@ main .second div p {
 #details form input[type="email"], #details input, #details #services, #details textarea {
   width: 80%;
   margin-bottom: 5px;
-  background-color: #421a16;
+  background-color: #272A31;
 }
 /*# sourceMappingURL=style.css.map */
