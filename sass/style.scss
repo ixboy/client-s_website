@@ -194,13 +194,14 @@ main{
         display: flex;
         justify-content: space-around;
         align-items:center;
+        height: 30vh;
+
         img{
             width: 70px;
             height: 70px;
         }
         div{
             width: 70%;
-            height: 30vh;
             p{
                 margin: auto;
                 padding: auto;
