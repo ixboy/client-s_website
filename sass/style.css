@@ -235,6 +235,21 @@ main .ourServices aside {
   display: flex;
 }
 
+main .ourServices aside h3 {
+  text-transform: uppercase;
+  margin-left: 0.4rem;
+}
+
+main .ourServices aside h5 {
+  margin: 0.4rem;
+  color: #EC5242;
+}
+
+main .ourServices aside p {
+  margin-left: 0.4rem;
+  line-height: 1.2;
+}
+
 main .ourServices div {
   margin: 1rem 0 0 0;
   padding-bottom: 1rem;

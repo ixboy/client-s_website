@@ -201,6 +201,21 @@ main{
         
         aside{
             display: flex;
+            
+            h3{
+                text-transform: uppercase;
+                margin-left: 0.4rem;
+            }
+
+            h5{
+                margin: 0.4rem;
+                color: $secondary;
+            }
+
+            p{
+                margin-left: 0.4rem;
+                line-height: 1.2;
+            }
         }
 
         div{
