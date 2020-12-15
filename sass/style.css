@@ -59,6 +59,11 @@ body * {
   margin: 1.5rem;
 }
 
+.bottom .logo {
+  width: 60px;
+  height: 50px;
+}
+
 .bottom #toggle {
   display: none;
 }
@@ -86,7 +91,7 @@ body * {
 .bottom ul li a {
   color: inherit;
   font-weight: bold;
-  font-size: 1.7rem;
+  font-size: 1.5rem;
 }
 
 .bottom #toggle:checked + ul {
@@ -118,6 +123,7 @@ main header h1 {
   width: 90%;
   text-align: center;
   margin-top: 1rem;
+  font-weight: bold;
 }
 
 main header div {
@@ -131,5 +137,107 @@ main header div p {
   text-align: center;
   padding: 1rem;
   line-height: 1.7;
+}
+
+main .showcase {
+  background-image: url(../img/graybackground.png);
+  background-position: center;
+  height: 90vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+main .showcase p {
+  text-align: center;
+  color: #D3D3D3;
+}
+
+main .showcase * {
+  color: #fff;
+}
+
+main .showcase h3 {
+  text-align: center;
+}
+
+main .showcase div {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main .showcase div a {
+  color: #EC5242;
+  font-size: 1rem;
+}
+
+main .showcase div p:last-of-type {
+  text-align: left;
+  max-width: 40%;
+}
+
+main .first {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  height: 250px;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  background-color: #403F44;
+}
+
+main .first * {
+  color: #D3D3D3;
+}
+
+main .first div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .first div img {
+  width: 30px;
+  height: 30px;
+}
+
+main .first .pa {
+  grid-column: span 3;
+  padding-top: 2rem;
+}
+
+main .second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .second img {
+  width: 70px;
+  height: 70px;
+}
+
+main .second div {
+  width: 70%;
+  height: 30vh;
+}
+
+main .second div p {
+  margin: auto;
+  padding: auto;
 }
 /*# sourceMappingURL=style.css.map */
