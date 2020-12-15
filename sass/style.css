@@ -1,5 +1,15 @@
 body {
   margin: 0px;
+  background-color: #f4f4f4;
+}
+
+body .current {
+  border: 1px solid #EC5242;
+}
+
+body .quote {
+  text-align: center;
+  padding-top: 2rem;
 }
 
 body * {
@@ -158,27 +168,47 @@ main .showcase * {
   color: #fff;
 }
 
-main .showcase h3 {
-  text-align: center;
-}
-
 main .showcase div {
+  font-size: 1rem;
+  background-color: #1a1c2071;
+  margin: 0.9rem 0.7rem;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .showcase div h3 {
+  -ms-flex-item-align: baseline;
+      align-self: baseline;
+  max-width: 25%;
 }
 
 main .showcase div a {
   color: #EC5242;
-  font-size: 1rem;
+  font-size: 0.9rem;
 }
 
 main .showcase div p:last-of-type {
   text-align: left;
   max-width: 40%;
+}
+
+main .showcase div img {
+  width: 50px;
+}
+
+main .featured div {
+  margin: 1rem;
+}
+
+main .featured div img {
+  width: 90px;
 }
 
 main .first {
