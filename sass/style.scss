@@ -4,6 +4,18 @@ $grayish: #D3D3D3;
 
 body{
     margin: 0px;
+    background-color: #f4f4f4;
+
+    .current{
+        border: 1px solid $secondary;
+    }
+
+    .quote{
+
+        text-align: center;
+        padding-top: 2rem;
+        
+    }
 }
 
 body *{
@@ -130,21 +142,41 @@ main{
         color: #fff;
         }
 
-        h3{
-        text-align: center;
 
-        }
 
         div{
+        font-size: 1rem;
+            background-color:#1a1c2071;
+            margin: 0.9rem 0.7rem;
             display: inline-flex;
             justify-content: space-between;
+            align-items: center;
+            h3{
+                align-self: baseline;
+                max-width: 25%;
+            }
             a{
                 color:$secondary;
-                font-size: 1rem;
+                font-size: 0.9rem;
             }
             p:last-of-type{
                 text-align: left;
                 max-width: 40%;
+            }
+            img{
+                width: 50px;
+            }
+        }
+    }
+
+    .featured{
+
+        div{
+            margin: 1rem;
+
+            img{
+                width: 90px;
+
             }
         }
     }
