@@ -1,0 +1,343 @@
+$primary: #272A31;
+$secondary: #EC5242;
+$grayish: #D3D3D3;
+
+body{
+    margin: 0px;
+    background-color: #f4f4f4;
+
+    .current{
+        border: 1px solid $secondary;
+    }
+
+    .blacklogo{
+        width: 7rem;
+        margin: 0 auto;
+    }
+
+    .quote{
+
+        text-align: center;
+        padding: 1rem 0;
+        font-size: 2rem;
+        
+    }
+}
+
+body *{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    color: $primary;
+}
+.container{
+    background-image: url(../img/whitebackground.png);
+    background-position: center;
+    background-size: cover;
+    background-color: $grayish;
+    height: 25vh;
+    margin: 0;
+    padding: 0;
+}
+
+.top{
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    background-color: $primary;
+    width: 100%;
+    ul{
+        margin-right: 3rem;
+        display: none;
+    }
+    li{
+        display: inline;
+        margin: 0 0.7rem;
+        font-size: 0.7rem;
+        a{
+            color: #fff;
+        }
+
+    }
+
+}
+
+.bottom{
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem;
+    .logo{
+        width: 60px;
+        height: 50px;
+    }
+    
+    #toggle{
+        display: none;
+    }
+    label{
+        font-size: 3rem;
+        color: $primary;
+        line-height: 70px;
+    }
+
+    ul{
+        display: flex;
+        align-items: center;
+        display: none;
+        li{
+            padding: 1rem;
+            a{
+                color: inherit;
+                font-weight: bold;
+                font-size: 1.5rem;
+            }
+        }
+        
+    }
+
+    #toggle:checked + ul{
+        display: flex;
+    }
+}
+
+main{
+    header{
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        h3{
+            color: $secondary;
+            text-align: center;
+        }
+
+        h1{
+            color: #BB0004;
+            font-size: 2rem;
+            width: 90%;
+            text-align: center;
+            margin: 2rem auto;
+            font-weight: bold;
+            
+        }
+        div{
+            margin: 2rem auto;
+            width: 90%;
+            height: 30%;
+            background-color: #f4f4f4;
+            p{
+                text-align: center;
+                padding: 1rem;
+                line-height: 1.7;
+            }
+        }
+    }
+
+    .showcase{
+        background-image: url(../img/graybackground.png);
+        background-position: center;
+        min-height: 110vh;
+        margin-top: 1rem;
+        display: grid;
+        grid-template-columns: 1fr;
+
+        h3{
+            color: $grayish;
+        }
+
+        p{
+            text-align: center;
+            color: $grayish;
+        }
+
+        & *{
+        color: #fff;
+        }
+
+
+
+        div{
+            font-size: 1rem;
+            background-color:#1a1c2071;
+            margin: 0.5rem 0.7rem;
+            padding: 0 0.5rem;
+            display: inline-flex;
+            justify-content: space-between;
+            align-items: center;
+            h3{
+                align-self: center;
+                max-width: 25%;
+                text-align: center;
+            }
+            a{
+                color:$secondary;
+                font-size: 0.9rem;
+            }
+            p:last-of-type{
+                text-align: left;
+                max-width: 40%;
+            }
+            img{
+                width: 50px;
+            }
+
+            h5{
+                padding: 1rem;
+                font-size: 1rem;
+                line-height: 1.3;
+                color: $grayish;
+
+                :last-of-type{
+                    background-color: $secondary;
+                    color: $primary;
+                }
+            }
+
+        }
+    }
+
+    .ourServices{
+        
+        aside{
+            display: flex;
+            
+            h3{
+                text-transform: uppercase;
+                margin-left: 0.4rem;
+            }
+
+            h5{
+                margin: 0.4rem;
+                color: $secondary;
+            }
+
+            p{
+                margin-left: 0.4rem;
+                line-height: 1.2;
+            }
+        }
+
+        div{
+            margin: 1rem 0 0 0;
+            padding-bottom: 1rem;
+
+            img{
+                width: 90px;
+
+            }
+        }
+    }
+    
+    .first{
+        display: grid;
+        width: 100%;
+        height: 250px;
+        grid-template-columns: 1fr 1fr 1fr;
+        text-align: center;
+        background-color: #403F44;
+
+        & *{
+        color: $grayish;
+
+        }
+        div{
+            display: flex;
+            align-items: center;
+            img{
+                width: 30px;
+                height: 30px;
+            }
+        }
+
+        .pa{
+            grid-column: span 3;
+            padding-top: 2rem;
+        }
+
+        // .mo{
+        // }
+
+        // .go{
+        // }
+
+        // .na{
+        // }
+        // .dau{
+        // }
+
+        // .air{
+        // }
+    }
+
+    .second{
+        display: flex;
+        justify-content: space-around;
+        align-items:center;
+        min-height: 20vh;
+
+        img{
+            width: 70px;
+            height: 70px;
+        }
+        div{
+            width: 70%;
+            p{
+                margin: auto;
+                padding: auto;
+                font-size: 0.8rem;
+            }
+        }
+     }
+
+}
+
+// the about page 
+
+.tech{
+    margin-top: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    
+    h3{
+        grid-column: span 3;
+    }
+
+    div{
+        margin: 1rem;
+        grid-column: 1fr;
+        margin-top: 2rem;
+
+        img{
+            width: 90px;
+
+        }
+    }
+}
+
+// the Form page
+
+.formSection{
+    background-color: $grayish;
+    padding: 2rem;
+}
+
+#details{
+    width: 90%;
+    background-color: $grayish;
+    margin: 0 auto;
+    background-image: linear-gradient(to top, rgba(236,82,66,0),  rgba(236,82,66,1)), url("/img/computer.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    & *{
+        margin: 1rem 0 0 1rem;
+        color: $grayish;
+    }
+    form input[type="email"], input, #services, textarea{
+        width:80%;
+        margin-bottom:5px;
+        background-color: $primary;
+      }
+}

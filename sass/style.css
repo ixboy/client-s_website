@@ -1,0 +1,372 @@
+body {
+  margin: 0px;
+  background-color: #f4f4f4;
+}
+
+body .current {
+  border: 1px solid #EC5242;
+}
+
+body .blacklogo {
+  width: 7rem;
+  margin: 0 auto;
+}
+
+body .quote {
+  text-align: center;
+  padding: 1rem 0;
+  font-size: 2rem;
+}
+
+body * {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  color: #272A31;
+}
+
+.container {
+  background-image: url(../img/whitebackground.png);
+  background-position: center;
+  background-size: cover;
+  background-color: #D3D3D3;
+  height: 25vh;
+  margin: 0;
+  padding: 0;
+}
+
+.top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: #272A31;
+  width: 100%;
+}
+
+.top ul {
+  margin-right: 3rem;
+  display: none;
+}
+
+.top li {
+  display: inline;
+  margin: 0 0.7rem;
+  font-size: 0.7rem;
+}
+
+.top li a {
+  color: #fff;
+}
+
+.bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 1.5rem;
+}
+
+.bottom .logo {
+  width: 60px;
+  height: 50px;
+}
+
+.bottom #toggle {
+  display: none;
+}
+
+.bottom label {
+  font-size: 3rem;
+  color: #272A31;
+  line-height: 70px;
+}
+
+.bottom ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: none;
+}
+
+.bottom ul li {
+  padding: 1rem;
+}
+
+.bottom ul li a {
+  color: inherit;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.bottom #toggle:checked + ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main header {
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: auto;
+}
+
+main header h3 {
+  color: #EC5242;
+  text-align: center;
+}
+
+main header h1 {
+  color: #BB0004;
+  font-size: 2rem;
+  width: 90%;
+  text-align: center;
+  margin: 2rem auto;
+  font-weight: bold;
+}
+
+main header div {
+  margin: 2rem auto;
+  width: 90%;
+  height: 30%;
+  background-color: #f4f4f4;
+}
+
+main header div p {
+  text-align: center;
+  padding: 1rem;
+  line-height: 1.7;
+}
+
+main .showcase {
+  background-image: url(../img/graybackground.png);
+  background-position: center;
+  min-height: 110vh;
+  margin-top: 1rem;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+}
+
+main .showcase h3 {
+  color: #D3D3D3;
+}
+
+main .showcase p {
+  text-align: center;
+  color: #D3D3D3;
+}
+
+main .showcase * {
+  color: #fff;
+}
+
+main .showcase div {
+  font-size: 1rem;
+  background-color: #1a1c2071;
+  margin: 0.5rem 0.7rem;
+  padding: 0 0.5rem;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .showcase div h3 {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  max-width: 25%;
+  text-align: center;
+}
+
+main .showcase div a {
+  color: #EC5242;
+  font-size: 0.9rem;
+}
+
+main .showcase div p:last-of-type {
+  text-align: left;
+  max-width: 40%;
+}
+
+main .showcase div img {
+  width: 50px;
+}
+
+main .showcase div h5 {
+  padding: 1rem;
+  font-size: 1rem;
+  line-height: 1.3;
+  color: #D3D3D3;
+}
+
+main .showcase div h5 :last-of-type {
+  background-color: #EC5242;
+  color: #272A31;
+}
+
+main .ourServices aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .ourServices aside h3 {
+  text-transform: uppercase;
+  margin-left: 0.4rem;
+}
+
+main .ourServices aside h5 {
+  margin: 0.4rem;
+  color: #EC5242;
+}
+
+main .ourServices aside p {
+  margin-left: 0.4rem;
+  line-height: 1.2;
+}
+
+main .ourServices div {
+  margin: 1rem 0 0 0;
+  padding-bottom: 1rem;
+}
+
+main .ourServices div img {
+  width: 90px;
+}
+
+main .first {
+  display: -ms-grid;
+  display: grid;
+  width: 100%;
+  height: 250px;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  text-align: center;
+  background-color: #403F44;
+}
+
+main .first * {
+  color: #D3D3D3;
+}
+
+main .first div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .first div img {
+  width: 30px;
+  height: 30px;
+}
+
+main .first .pa {
+  grid-column: span 3;
+  padding-top: 2rem;
+}
+
+main .second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 20vh;
+}
+
+main .second img {
+  width: 70px;
+  height: 70px;
+}
+
+main .second div {
+  width: 70%;
+}
+
+main .second div p {
+  margin: auto;
+  padding: auto;
+  font-size: 0.8rem;
+}
+
+.tech {
+  margin-top: 10px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+}
+
+.tech h3 {
+  grid-column: span 3;
+}
+
+.tech div {
+  margin: 1rem;
+  -ms-grid-column: 1;
+  grid-column: 1fr;
+  margin-top: 2rem;
+}
+
+.tech div img {
+  width: 90px;
+}
+
+.formSection {
+  background-color: #D3D3D3;
+  padding: 2rem;
+}
+
+#details {
+  width: 90%;
+  background-color: #D3D3D3;
+  margin: 0 auto;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(236, 82, 66, 0)), to(#ec5242)), url("/img/computer.jpg");
+  background-image: linear-gradient(to top, rgba(236, 82, 66, 0), #ec5242), url("/img/computer.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#details * {
+  margin: 1rem 0 0 1rem;
+  color: #D3D3D3;
+}
+
+#details form input[type="email"], #details input, #details #services, #details textarea {
+  width: 80%;
+  margin-bottom: 5px;
+  background-color: #272A31;
+}
+/*# sourceMappingURL=style.css.map */
