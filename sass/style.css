@@ -14,7 +14,8 @@ body .blacklogo {
 
 body .quote {
   text-align: center;
-  padding-top: 2rem;
+  padding: 1rem 0;
+  font-size: 2rem;
 }
 
 body * {
@@ -134,10 +135,10 @@ main header h3 {
 
 main header h1 {
   color: #BB0004;
-  font-size: 2.5rem;
+  font-size: 2rem;
   width: 90%;
   text-align: center;
-  margin-top: 1rem;
+  margin: 2rem auto;
   font-weight: bold;
 }
 
@@ -157,7 +158,7 @@ main header div p {
 main .showcase {
   background-image: url(../img/graybackground.png);
   background-position: center;
-  height: 90vh;
+  min-height: 110vh;
   margin-top: 1rem;
   display: -ms-grid;
   display: grid;
@@ -182,6 +183,7 @@ main .showcase div {
   font-size: 1rem;
   background-color: #1a1c2071;
   margin: 0.5rem 0.7rem;
+  padding: 0 0.5rem;
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
   display: inline-flex;
@@ -198,6 +200,7 @@ main .showcase div h3 {
       -ms-grid-row-align: center;
       align-self: center;
   max-width: 25%;
+  text-align: center;
 }
 
 main .showcase div a {
@@ -221,11 +224,38 @@ main .showcase div h5 {
   color: #D3D3D3;
 }
 
-main .featured div {
-  margin: 1rem;
+main .showcase div h5 :last-of-type {
+  background-color: #EC5242;
+  color: #272A31;
 }
 
-main .featured div img {
+main .ourServices aside {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main .ourServices aside h3 {
+  text-transform: uppercase;
+  margin-left: 0.4rem;
+}
+
+main .ourServices aside h5 {
+  margin: 0.4rem;
+  color: #EC5242;
+}
+
+main .ourServices aside p {
+  margin-left: 0.4rem;
+  line-height: 1.2;
+}
+
+main .ourServices div {
+  margin: 1rem 0 0 0;
+  padding-bottom: 1rem;
+}
+
+main .ourServices div img {
   width: 90px;
 }
 
@@ -272,7 +302,7 @@ main .second {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 20vh;
+  min-height: 20vh;
 }
 
 main .second img {
@@ -287,9 +317,11 @@ main .second div {
 main .second div p {
   margin: auto;
   padding: auto;
+  font-size: 0.8rem;
 }
 
 .tech {
+  margin-top: 10px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
@@ -309,5 +341,32 @@ main .second div p {
 
 .tech div img {
   width: 90px;
+}
+
+.formSection {
+  background-color: #D3D3D3;
+  padding: 2rem;
+}
+
+#details {
+  width: 90%;
+  background-color: #D3D3D3;
+  margin: 0 auto;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(236, 82, 66, 0)), to(#ec5242)), url("/img/computer.jpg");
+  background-image: linear-gradient(to top, rgba(236, 82, 66, 0), #ec5242), url("/img/computer.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#details * {
+  margin: 1rem 0 0 1rem;
+  color: #D3D3D3;
+}
+
+#details form input[type="email"], #details input, #details #services, #details textarea {
+  width: 80%;
+  margin-bottom: 5px;
+  background-color: #272A31;
 }
 /*# sourceMappingURL=style.css.map */
