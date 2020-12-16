@@ -265,7 +265,7 @@ body {
     .first {
       display: grid;
       grid-template-columns: repeat(12,1fr);
-      grid-auto-rows: minmax(100px, auto);
+      grid-auto-rows: minmax(2rem, auto);
       text-align: center;
       background-color: #403f44;
 
@@ -286,26 +286,25 @@ body {
         grid-column: 1/13;
       }
 
-    //   .mo{
-        // grid-column: 1/2;
-        // grid-row: 2/4;
+      .mo{
+        grid-column: 3/5;
+      }
 
-    //   }
+      .go{
+        grid-column: 5/7;
+      }
 
-    //   .go{
-        // grid-column: 7/9;
-        // grid-row: 3/4;
-    //   }
+      .na{
+        grid-column: 8/10;
+      }
 
-    //   .na{
-        // grid-column: 1/13;
-        // grid-row: 3/4;
-    //   }
-      // .dau{
-      // }
+      .dau{
+        grid-column: 4/5;
+      }
 
-      // .air{
-      // }
+      .air{
+        grid-column: 6/7;
+      }
     }
 
     .second {
@@ -570,12 +569,63 @@ body {
         }
       }
 
-    //   .first {
-    //     display: grid;
-    //     grid-template-columns: repeat(12, 1fr);
-    //     grid-auto-rows: minmax(100px, auto);
+      main{
+
+        .first {
+          display: grid;
+          grid-template-columns: repeat(12,1fr);
+          grid-auto-rows: minmax(2rem, auto);
+          font-size: 1.5rem;
+          column-gap: 2rem;
   
-    //   }
+          .pa{
+          grid-column: 1/13;
+          }
+          .mo{
+            grid-column: 4;
+          }
+    
+          .go{
+            grid-column: 5;
+          }
+    
+          .na{
+            grid-column: 6;
+          }
+    
+          .dau{
+            grid-column: 7;
+          }
+    
+          .air{
+            grid-column:8;
+          }
+    
+        }
+
+        .second {
+          display: grid;
+          grid-template-columns: repeat(6, 1fr);
+
+          img {
+            width: 150px;
+            height: 130px;
+            grid-column: 3/4;
+            margin-bottom: 0.9  rem;
+          }
+          div {
+            width: auto;
+            grid-column: 4/5;
+            p {
+              font-size: 0.9rem;
+              margin-bottom: 0.4rem;
+            }
+          }
+        }
+
+
+
+      }
 
 
     }
