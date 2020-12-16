@@ -1,10 +1,22 @@
 body {
   margin: 0px;
   background-color: #f4f4f4;
+  font-family: "Lato";
+}
+
+body * {
+  list-style: none;
+  text-decoration: none;
 }
 
 body .current {
-  border: 1px solid #EC5242;
+  color: #ec5242;
+}
+
+body #campaign {
+  color: #ec5242;
+  border: 5px solid #ec5242;
+  display: none;
 }
 
 body .blacklogo {
@@ -12,31 +24,36 @@ body .blacklogo {
   margin: 0 auto;
 }
 
+body .fab {
+  color: #f4f4f4;
+}
+
 body .quote {
   text-align: center;
   padding: 1rem 0;
+  margin: 1rem 0;
   font-size: 2rem;
 }
 
-body * {
+body body * {
   margin: 0;
   padding: 0;
   list-style: none;
   text-decoration: none;
-  color: #272A31;
+  color: #272a31;
 }
 
-.container {
+body .container {
   background-image: url(../img/whitebackground.png);
   background-position: center;
   background-size: cover;
-  background-color: #D3D3D3;
+  background-color: #d3d3d3;
   height: 25vh;
   margin: 0;
   padding: 0;
 }
 
-.top {
+body .top {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -46,27 +63,26 @@ body * {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
-  background-color: #272A31;
   width: 100%;
   height: 13%;
 }
 
-.top ul {
+body .top ul {
   margin-right: 3rem;
   display: none;
 }
 
-.top li {
+body .top li {
   display: inline;
   margin: 0 0.7rem;
   font-size: 0.7rem;
 }
 
-.top li a {
+body .top li a {
   color: #fff;
 }
 
-.bottom {
+body .bottom {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -76,22 +92,22 @@ body * {
   margin: 1.5rem;
 }
 
-.bottom .logo {
-  width: 60px;
+body .bottom .logo {
+  width: 50px;
   height: 50px;
 }
 
-.bottom #toggle {
+body .bottom #toggle {
   display: none;
 }
 
-.bottom label {
-  font-size: 3rem;
-  color: #272A31;
-  line-height: 70px;
+body .bottom label {
+  font-size: 2rem;
+  color: #272a31;
+  line-height: 60px;
 }
 
-.bottom ul {
+body .bottom ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -101,23 +117,23 @@ body * {
   display: none;
 }
 
-.bottom ul li {
+body .bottom ul li {
   padding: 1rem;
 }
 
-.bottom ul li a {
+body .bottom ul li a {
   color: inherit;
   font-weight: bold;
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
-.bottom #toggle:checked + ul {
+body .bottom #toggle:checked + ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-main header {
+body main header {
   margin: 0 auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -127,22 +143,20 @@ main header {
       -ms-flex-direction: column;
           flex-direction: column;
   height: auto;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  height: auto;
+  font-family: "COCOGOOSE";
   background-image: url(../img/anothergraybackground.png);
-  background-position: left;
+  background-repeat: no-repeat;
+  background-position: right;
   background-size: contain;
 }
 
-main header h3 {
-  color: #EC5242;
+body main header h3 {
+  color: #ec5242;
   text-align: center;
 }
 
-main header h1 {
-  color: #BB0004;
+body main header h1 {
+  color: #bb0004;
   font-size: 2rem;
   width: 90%;
   text-align: center;
@@ -150,20 +164,20 @@ main header h1 {
   font-weight: bold;
 }
 
-main header div {
+body main header div {
   margin: 2rem auto;
   width: 90%;
   height: 30%;
-  background-color: #D3D3D3;
+  background-color: #d3d3d3;
 }
 
-main header div p {
+body main header div p {
   text-align: center;
   padding: 1rem;
   line-height: 1.7;
 }
 
-main .showcase {
+body main .showcase {
   background-image: url(../img/graybackground.png);
   background-position: center;
   min-height: 110vh;
@@ -174,20 +188,20 @@ main .showcase {
       grid-template-columns: 1fr;
 }
 
-main .showcase h3 {
-  color: #D3D3D3;
+body main .showcase h3 {
+  color: #d3d3d3;
 }
 
-main .showcase p {
+body main .showcase p {
   text-align: center;
-  color: #D3D3D3;
+  color: #d3d3d3;
 }
 
-main .showcase * {
-  color: #D3D3D3;
+body main .showcase * {
+  color: #d3d3d3;
 }
 
-main .showcase div {
+body main .showcase div {
   font-size: 1rem;
   background-color: #1a1c2071;
   margin: 0.5rem 0.7rem;
@@ -203,7 +217,7 @@ main .showcase div {
           align-items: center;
 }
 
-main .showcase div h3 {
+body main .showcase div h3 {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
@@ -211,78 +225,94 @@ main .showcase div h3 {
   text-align: center;
 }
 
-main .showcase div a {
-  color: #EC5242;
+body main .showcase div a {
+  color: #ec5242;
   font-size: 0.9rem;
 }
 
-main .showcase div p:last-of-type {
+body main .showcase div p:last-of-type {
   text-align: left;
   max-width: 40%;
 }
 
-main .showcase div img {
+body main .showcase div img {
   width: 50px;
 }
 
-main .showcase div h5 {
+body main .showcase div h5 {
   padding: 1rem;
   font-size: 1rem;
   line-height: 1.3;
-  color: #D3D3D3;
+  color: #d3d3d3;
 }
 
-main .showcase div h5 :last-of-type {
-  background-color: #EC5242;
-  color: #272A31;
+body main .showcase div h5 :last-of-type {
+  background-color: #ec5242;
+  color: #272a31;
 }
 
-main .ourServices aside {
+body main .showcase #more {
+  margin: 2rem auto;
+  padding: 1rem  3rem;
+  border-radius: 5%;
+  background-color: #ec5242;
+}
+
+body main .showcase #more h2 {
+  margin: auto;
+}
+
+body main .showcase #more h2 * {
+  margin: auto;
+  font-size: 1rem;
+  color: #d3d3d3;
+}
+
+body main .ourServices aside {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-main .ourServices aside h3 {
+body main .ourServices aside h3 {
   text-transform: uppercase;
   margin-left: 0.4rem;
 }
 
-main .ourServices aside h5 {
+body main .ourServices aside h5 {
   margin: 0.4rem;
-  color: #EC5242;
+  color: #ec5242;
 }
 
-main .ourServices aside p {
+body main .ourServices aside p {
   margin-left: 0.4rem;
   line-height: 1.2;
 }
 
-main .ourServices div {
+body main .ourServices div {
   margin: 1rem 0 0 0;
   padding-bottom: 1rem;
 }
 
-main .ourServices div img {
+body main .ourServices div img {
   width: 90px;
 }
 
-main .first {
+body main .first {
   display: -ms-grid;
   display: grid;
-  width: 100%;
-  height: 250px;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: (1fr)[12];
+      grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: minmax(100px, auto);
   text-align: center;
-  background-color: #403F44;
+  background-color: #403f44;
 }
 
-main .first * {
-  color: #D3D3D3;
+body main .first * {
+  color: #d3d3d3;
 }
 
-main .first div {
+body main .first div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -291,17 +321,18 @@ main .first div {
           align-items: center;
 }
 
-main .first div img {
+body main .first div img {
   width: 30px;
   height: 30px;
 }
 
-main .first .pa {
-  grid-column: span 3;
-  padding-top: 2rem;
+body main .first .pa {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 12;
+  grid-column: 1/13;
 }
 
-main .second {
+body main .second {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -313,22 +344,22 @@ main .second {
   min-height: 20vh;
 }
 
-main .second img {
+body main .second img {
   width: 70px;
   height: 70px;
 }
 
-main .second div {
+body main .second div {
   width: 70%;
 }
 
-main .second div p {
+body main .second div p {
   margin: auto;
   padding: auto;
   font-size: 0.8rem;
 }
 
-.tech {
+body .tech {
   margin-top: 10px;
   display: -ms-grid;
   display: grid;
@@ -336,29 +367,29 @@ main .second div p {
       grid-template-columns: 1fr 1fr 1fr;
 }
 
-.tech h3 {
+body .tech h3 {
   grid-column: span 3;
 }
 
-.tech div {
+body .tech div {
   margin: 1rem;
   -ms-grid-column: 1;
   grid-column: 1fr;
   margin-top: 2rem;
 }
 
-.tech div img {
+body .tech div img {
   width: 90px;
 }
 
-.formSection {
-  background-color: #D3D3D3;
+body .formSection {
+  background-color: #d3d3d3;
   padding: 2rem;
 }
 
-#details {
+body #details {
   width: 90%;
-  background-color: #D3D3D3;
+  background-color: #d3d3d3;
   margin: 0 auto;
   background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(236, 82, 66, 0)), to(#ec5242)), url(../img/computer.jpg);
   background-image: linear-gradient(to top, rgba(236, 82, 66, 0), #ec5242), url(../img/computer.jpg);
@@ -368,28 +399,35 @@ main .second div p {
   border-radius: 5%;
 }
 
-#details * {
+body #details * {
   margin: 1rem 0 0 1rem;
-  color: #D3D3D3;
+  color: #d3d3d3;
 }
 
-#details form input[type="email"], #details input, #details #services, #details textarea {
+body #details form input[type="email"],
+body #details input,
+body #details #services,
+body #details textarea {
   width: 80%;
   margin-bottom: 5px;
   background-color: #34373d;
 }
 
 @media (min-width: 768px) {
-  .top {
-    height: 20%;
+  body #campaign {
+    display: inline;
   }
-  .top ul {
+  body .top {
+    height: 20%;
+    background-color: #272a31;
+  }
+  body .top ul {
     display: contents;
   }
-  .top ul * {
+  body .top ul * {
     font-size: 1rem;
   }
-  .bottom {
+  body .bottom {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -403,45 +441,79 @@ main .second div p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    margin: 1.5rem;
+    background-color: #fff;
+    margin: 0 0 2rem 0;
+    -webkit-box-shadow: 0px 10px 5px #888;
+            box-shadow: 0px 10px 5px #888;
   }
-  .bottom .logo {
+  body .bottom .logo {
     width: 150px;
     height: 150px;
+    margin-left: 1rem;
   }
-  .bottom ul {
+  body .bottom ul {
     display: contents;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .bottom ul li {
+  body .bottom ul li {
     margin: 0 1rem;
   }
-  .bottom label {
+  body .bottom ul li a {
+    font-size: 2rem;
+    margin-right: 1rem;
+  }
+  body .bottom label {
     display: none;
   }
-  main header {
+  body main header {
     padding-top: 5rem;
     max-width: 80%;
   }
-  main header h3 {
+  body main header h3 {
     font-size: 3rem;
     text-align: left;
   }
-  main header h1 {
+  body main header h1 {
     font-size: 4rem;
     text-align: left;
   }
-  main header p {
+  body main header p {
     font-size: 2rem;
   }
-  main .showcase {
+  body main .showcase {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: auto auto auto auto;
         grid-template-columns: auto auto auto auto;
+    min-height: 85vh;
   }
-  main .showcase div {
+  body main .showcase h3 {
+    font-size: 4rem;
+    grid-column: span 4;
+  }
+  body main .showcase #more {
+    grid-column: span 4;
+    grid-row: span 2;
+    min-height: 20vh;
+    margin: auto;
+    padding: 1rem;
+    background: none;
+  }
+  body main .showcase #more h2 {
+    margin: auto;
+  }
+  body main .showcase #more h2 * {
+    margin: auto;
+    font-size: 1.5rem;
+    width: 1000px;
+    color: #d3d3d3;
+    text-decoration: underline;
+    margin: auto;
+  }
+  body main .showcase div {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -449,58 +521,73 @@ main .second div p {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    padding-top: 0;
+    min-height: 70%;
+    width: 70%;
+    margin: 0 auto;
   }
-  main .showcase h3 {
-    font-size: 4rem;
-    grid-column: span 4;
-  }
-  main .showcase div h3 {
+  body main .showcase div h3 {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
     max-width: 100%;
-    margin: 0rem;
+    margin: 0;
+    padding: 0;
     text-align: center;
   }
-  main .showcase div a {
-    color: #EC5242;
+  body main .showcase div a {
+    color: #ec5242;
     font-size: 0.9rem;
   }
-  main .showcase div p:last-of-type {
+  body main .showcase div p:last-of-type {
     text-align: center;
     max-width: 90%;
   }
-  main .showcase div img {
+  body main .showcase div img {
     width: 100px;
   }
-  main .showcase div h5 {
+  body main .showcase div h5 {
     margin: 0rem;
     padding: 0rem;
   }
-  .ourServices aside {
+  body .ourServices .grid-container {
+    margin: 1rem auto;
+    max-width: 85%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: auto;
+        grid-template-rows: auto;
+  }
+  body .ourServices .grid-container aside {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .ourServices aside h3 {
+  body .ourServices .grid-container aside div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0;
+  }
+  body .ourServices h3 {
     text-transform: uppercase;
-    margin-left: 0.4rem;
+    padding-left: 2rem;
   }
-  .ourServices aside h5 {
-    margin: 0.4rem;
-    color: #EC5242;
+  body .ourServices h5 {
+    color: #ec5242;
+    padding-left: 2rem;
   }
-  .ourServices aside p {
-    margin-left: 0.4rem;
+  body .ourServices p {
     line-height: 1.2;
-  }
-  .ourServices div {
-    margin: 1rem 0 0 0;
-    padding-bottom: 1rem;
-  }
-  .ourServices div img {
-    width: 90px;
+    padding-left: 2rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
