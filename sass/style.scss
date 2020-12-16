@@ -107,6 +107,15 @@ main{
         display: flex;
         flex-direction: column;
         height: auto;
+
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        background-image: url(../img/anothergraybackground.png);
+        background-position: left;
+        background-size: contain;
+
         h3{
             color: $secondary;
             text-align: center;
@@ -326,10 +335,11 @@ main{
     width: 90%;
     background-color: $grayish;
     margin: 0 auto;
-    background-image: linear-gradient(to top, rgba(236,82,66,0),  rgba(236,82,66,1)), url(./img/computer.jpg);
+    background-image: linear-gradient(to top, rgba(236,82,66,0),  rgba(236,82,66,1)), url(../img/computer.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 5%;
 
     & *{
         margin: 1rem 0 0 1rem;

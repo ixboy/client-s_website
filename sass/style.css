@@ -126,6 +126,13 @@ main header {
       -ms-flex-direction: column;
           flex-direction: column;
   height: auto;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  background-image: url(../img/anothergraybackground.png);
+  background-position: left;
+  background-size: contain;
 }
 
 main header h3 {
@@ -352,11 +359,12 @@ main .second div p {
   width: 90%;
   background-color: #D3D3D3;
   margin: 0 auto;
-  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(236, 82, 66, 0)), to(#ec5242)), url(./img/computer.jpg);
-  background-image: linear-gradient(to top, rgba(236, 82, 66, 0), #ec5242), url(./img/computer.jpg);
+  background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(236, 82, 66, 0)), to(#ec5242)), url(../img/computer.jpg);
+  background-image: linear-gradient(to top, rgba(236, 82, 66, 0), #ec5242), url(../img/computer.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 5%;
 }
 
 #details * {
