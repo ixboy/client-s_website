@@ -184,7 +184,7 @@ main .showcase p {
 }
 
 main .showcase * {
-  color: #fff;
+  color: #D3D3D3;
 }
 
 main .showcase div {
@@ -434,6 +434,73 @@ main .second div p {
   }
   main header p {
     font-size: 2rem;
+  }
+  main .showcase {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: auto auto auto auto;
+        grid-template-columns: auto auto auto auto;
+  }
+  main .showcase div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-top: 0;
+  }
+  main .showcase h3 {
+    font-size: 4rem;
+    grid-column: span 4;
+  }
+  main .showcase div h3 {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    max-width: 100%;
+    margin: 0rem;
+    text-align: center;
+  }
+  main .showcase div a {
+    color: #EC5242;
+    font-size: 0.9rem;
+  }
+  main .showcase div p:last-of-type {
+    text-align: center;
+    max-width: 90%;
+  }
+  main .showcase div img {
+    width: 100px;
+  }
+  main .showcase div h5 {
+    margin: 0rem;
+    padding: 0rem;
+  }
+  .ourServices aside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .ourServices aside h3 {
+    text-transform: uppercase;
+    margin-left: 0.4rem;
+  }
+  .ourServices aside h5 {
+    margin: 0.4rem;
+    color: #EC5242;
+  }
+  .ourServices aside p {
+    margin-left: 0.4rem;
+    line-height: 1.2;
+  }
+  .ourServices div {
+    margin: 1rem 0 0 0;
+    padding-bottom: 1rem;
+  }
+  .ourServices div img {
+    width: 90px;
   }
 }
 /*# sourceMappingURL=style.css.map */

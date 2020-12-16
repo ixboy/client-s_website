@@ -89,7 +89,7 @@ body *{
         display: none;
         li{
             padding: 1rem;
-            
+
             a{
                 color: inherit;
                 font-weight: bold;
@@ -165,7 +165,7 @@ main{
         }
 
         & *{
-        color: #fff;
+        color: $grayish;
         }
 
 
@@ -415,6 +415,84 @@ main{
 
         }
 
+        .showcase{
+            display: grid;
+            grid-template-columns: auto auto auto auto;
+            
+            div{
+                display: flex;
+                flex-direction: column;
+                padding-top: 0;
+            }
+            h3{
+                font-size: 4rem;
+                grid-column: span 4;
+            }
+
+
+        div{
+            h3{
+                align-self: center;
+                max-width: 100%;
+                margin: 0rem;
+                text-align: center;
+            }
+            a{
+                color:$secondary;
+                font-size: 0.9rem;
+            }
+            p:last-of-type{
+                text-align: center;
+                max-width: 90%;
+            }
+            img{
+                width: 100px;
+            }
+
+            h5{
+                margin: 0rem;
+                padding: 0rem;
+
+            }
+
+        }
+    
+        }
+    
+
+    }
+
+    
+    .ourServices{
+        
+        aside{
+            display: flex;
+            
+            h3{
+                text-transform: uppercase;
+                margin-left: 0.4rem;
+            }
+
+            h5{
+                margin: 0.4rem;
+                color: $secondary;
+            }
+
+            p{
+                margin-left: 0.4rem;
+                line-height: 1.2;
+            }
+        }
+
+        div{
+            margin: 1rem 0 0 0;
+            padding-bottom: 1rem;
+
+            img{
+                width: 90px;
+
+            }
+        }
     }
 
 }
