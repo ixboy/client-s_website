@@ -23,7 +23,7 @@ This is a Capstone project in the end of Microverse's HTML and CSS module
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://ixboy.github.io/client-s_website/index.html)
 
 
 ## Getting Started
