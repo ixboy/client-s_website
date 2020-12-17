@@ -235,8 +235,22 @@ body {
     }
 
     .ourServices {
+      margin: auto;
       aside {
         display: flex;
+        align-items: center;
+
+        .relative{
+          width: 130px;
+          height: 100px;
+
+          .abs{
+          width: 100px;
+          height: 100px;
+          }
+
+          
+        }
 
         h3 {
           text-transform: uppercase;
@@ -252,15 +266,13 @@ body {
           margin-left: 0.4rem;
           line-height: 1.2;
         }
+        
+
       }
 
       div {
         margin: 1rem 0 0 0;
         padding-bottom: 1rem;
-
-        img {
-          width: 90px;
-        }
       }
     }
 

@@ -269,10 +269,27 @@ body main .showcase #more h2 * {
   color: #d3d3d3;
 }
 
+body main .ourServices {
+  margin: auto;
+}
+
 body main .ourServices aside {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body main .ourServices aside .relative {
+  width: 130px;
+  height: 100px;
+}
+
+body main .ourServices aside .relative .abs {
+  width: 100px;
+  height: 100px;
 }
 
 body main .ourServices aside h3 {
@@ -293,10 +310,6 @@ body main .ourServices aside p {
 body main .ourServices div {
   margin: 1rem 0 0 0;
   padding-bottom: 1rem;
-}
-
-body main .ourServices div img {
-  width: 90px;
 }
 
 body main .first {
