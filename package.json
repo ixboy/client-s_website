@@ -9,14 +9,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aliciapaz/bootstrap-newsweek.git"
+    "url": "https://ixboy.github.io/client-s_website/index.html"
   },
   "keywords": [
-    "bootstrap",
-    "rww",
+    "HTML 5",
+    "CSS 3",
     "grid"
   ],
-  "author": "ixboy aliciapaz",
+  "author": "ixboy",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/aliciapaz/bootstrap-newsweek/issues"

@@ -1,7 +1,7 @@
 body {
-  margin: 0px;
+  margin: 0;
   background-color: #f4f4f4;
-  font-family: "Lato";
+  font-family: "Lato", sans-serif;
   color: #272a31;
 }
 
@@ -94,38 +94,35 @@ body .bottom {
 }
 
 body .bottom .logo {
-  width: 50px;
-  height: 50px;
+  width: 25px;
+  height: 25px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 body .bottom #toggle {
   display: none;
+  width: 0;
 }
 
 body .bottom label {
   font-size: 2rem;
   color: #272a31;
-  line-height: 60px;
+  line-height: 50px;
 }
 
 body .bottom ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   display: none;
 }
 
 body .bottom ul li {
-  padding: 1rem;
+  padding: 0.3rem;
 }
 
 body .bottom ul li a {
   color: inherit;
   font-weight: bold;
-  font-size: 1rem;
 }
 
 body .bottom #toggle:checked + ul {
@@ -144,7 +141,7 @@ body main header {
       -ms-flex-direction: column;
           flex-direction: column;
   height: auto;
-  font-family: "COCOGOOSE";
+  font-family: "COCOGOOSE", Verdana, Geneva, Tahoma, sans-serif;
   background-image: url(../img/anothergraybackground.png);
   background-repeat: no-repeat;
   background-position: right;
@@ -178,6 +175,42 @@ body main header div p {
   line-height: 1.7;
 }
 
+body main .para {
+  text-align: center;
+  color: #d3d3d3;
+}
+
+body main .second {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 20vh;
+}
+
+body main .second img {
+  width: 70px;
+  height: 70px;
+}
+
+body main .second div {
+  width: 70%;
+}
+
+body main .second div p {
+  margin: auto;
+  font-size: 0.8rem;
+}
+
+body main .a-p {
+  margin-left: 0.4rem;
+  line-height: 1.2;
+}
+
 body main .showcase {
   background-image: url(../img/graybackground.png);
   background-position: center;
@@ -189,16 +222,11 @@ body main .showcase {
       grid-template-columns: 1fr;
 }
 
-body main .showcase h3 {
-  color: #d3d3d3;
-}
-
-body main .showcase p {
-  text-align: center;
-  color: #d3d3d3;
-}
-
 body main .showcase * {
+  color: #d3d3d3;
+}
+
+body main .showcase h3 {
   color: #d3d3d3;
 }
 
@@ -216,6 +244,10 @@ body main .showcase div {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+body main .showcase div img {
+  width: 50px;
 }
 
 body main .showcase div h3 {
@@ -236,10 +268,6 @@ body main .showcase div p:last-of-type {
   max-width: 40%;
 }
 
-body main .showcase div img {
-  width: 50px;
-}
-
 body main .showcase div h5 {
   padding: 1rem;
   font-size: 1rem;
@@ -254,7 +282,7 @@ body main .showcase div h5 :last-of-type {
 
 body main .showcase #more {
   margin: 2rem auto;
-  padding: 1rem  3rem;
+  padding: 1rem 3rem;
   border-radius: 5%;
   background-color: #ec5242;
 }
@@ -302,11 +330,6 @@ body main .ourServices aside h5 {
   color: #ec5242;
 }
 
-body main .ourServices aside p {
-  margin-left: 0.4rem;
-  line-height: 1.2;
-}
-
 body main .ourServices div {
   margin: 1rem 0 0 0;
   padding-bottom: 1rem;
@@ -320,9 +343,6 @@ body main .first {
   grid-auto-rows: minmax(2rem, auto);
   text-align: center;
   background-color: #403f44;
-}
-
-body main .first * {
   color: #d3d3d3;
 }
 
@@ -376,33 +396,6 @@ body main .first .air {
   grid-column: 6/7;
 }
 
-body main .second {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-height: 20vh;
-}
-
-body main .second img {
-  width: 70px;
-  height: 70px;
-}
-
-body main .second div {
-  width: 70%;
-}
-
-body main .second div p {
-  margin: auto;
-  padding: auto;
-  font-size: 0.8rem;
-}
-
 body .about {
   background-image: url(/img/anothergraybackground.png);
   background-position: bottom;
@@ -441,10 +434,6 @@ body .about .phototwo {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-body .about .photo h2,
-body .about .phototwo h2 {
   color: #d3d3d3;
 }
 
@@ -463,17 +452,15 @@ body .tech {
       grid-template-columns: 1fr 1fr 1fr;
 }
 
-body .tech h3 {
+body .tech .t-h {
   grid-column: span 3;
 }
 
-body .tech div {
+body .tech .t-d {
   margin: 2rem auto;
-  -ms-grid-column: 1;
-  grid-column: 1fr;
 }
 
-body .tech div img {
+body .tech .t-d img {
   width: 90px;
 }
 
@@ -492,10 +479,6 @@ body #details {
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 5%;
-}
-
-body #details * {
-  margin: 1rem 0 0 1rem;
   color: #d3d3d3;
 }
 
@@ -503,13 +486,22 @@ body #details form input[type="email"],
 body #details input,
 body #details #services,
 body #details textarea {
+  margin: 1rem 0 0 1rem;
+  padding: 7px;
   width: 80%;
   margin-bottom: 5px;
   background-color: #34373d;
+  color: #d3d3d3;
+}
+
+body #details p,
+body #details label {
+  margin: 1rem 0 0 1rem;
 }
 
 body #details textarea {
-  border-radius: 0% 50% 0% 30%;
+  padding: 10px;
+  border-radius: 0% 30%;
 }
 
 @media (min-width: 768px) {
@@ -540,113 +532,42 @@ body #details textarea {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    margin: 1.5rem;
     background-color: #fff;
     margin: 0 0 2rem 0;
-    -webkit-box-shadow: 0px 10px 5px #888;
-            box-shadow: 0px 10px 5px #888;
+    -webkit-box-shadow: 0 10px 5px #888;
+            box-shadow: 0 10px 5px #888;
   }
   body .bottom .logo {
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     margin-left: 1rem;
   }
   body .bottom ul {
-    display: contents;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  body .bottom ul li {
-    margin: 0 1rem;
-  }
   body .bottom ul li a {
-    font-size: 2rem;
+    font-size: 1.5rem;
     margin-right: 1rem;
   }
   body .bottom label {
     display: none;
   }
-  body main header {
+  body header {
     padding-top: 5rem;
     max-width: 80%;
   }
-  body main header h3 {
+  body header h3 {
     font-size: 3rem;
     text-align: left;
   }
-  body main header h1 {
+  body header h1 {
     font-size: 4rem;
     text-align: left;
   }
-  body main header p {
+  body header p {
     font-size: 2rem;
-  }
-  body main .showcase {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: auto auto auto auto;
-        grid-template-columns: auto auto auto auto;
-    min-height: 85vh;
-  }
-  body main .showcase h3 {
-    font-size: 4rem;
-    grid-column: span 4;
-  }
-  body main .showcase #more {
-    grid-column: span 4;
-    grid-row: span 2;
-    min-height: 20vh;
-    margin: auto;
-    padding: 1rem;
-    background: none;
-  }
-  body main .showcase #more h2 {
-    margin: auto;
-  }
-  body main .showcase #more h2 * {
-    margin: auto;
-    font-size: 1.5rem;
-    width: 1000px;
-    color: #d3d3d3;
-    text-decoration: underline;
-    margin: auto;
-  }
-  body main .showcase div {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    min-height: 70%;
-    width: 70%;
-    margin: 0 auto;
-  }
-  body main .showcase div h3 {
-    -ms-flex-item-align: center;
-        -ms-grid-row-align: center;
-        align-self: center;
-    max-width: 100%;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-  }
-  body main .showcase div a {
-    color: #ec5242;
-    font-size: 0.9rem;
-  }
-  body main .showcase div p:last-of-type {
-    text-align: center;
-    max-width: 90%;
-  }
-  body main .showcase div img {
-    width: 100px;
-  }
-  body main .showcase div h5 {
-    margin: 0rem;
-    padding: 0rem;
   }
   body .ourServices .grid-container {
     margin: 1rem auto;
@@ -688,6 +609,29 @@ body #details textarea {
     line-height: 1.2;
     padding-left: 2rem;
   }
+  body .second {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
+  }
+  body .second img {
+    width: 150px;
+    height: 130px;
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+  }
+  body .second .s-d {
+    width: auto;
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4/5;
+  }
+  body .second .s-d p {
+    font-size: 0.9rem;
+    margin-bottom: 0.4rem;
+  }
   body main .first {
     display: -ms-grid;
     display: grid;
@@ -723,29 +667,20 @@ body #details textarea {
     -ms-grid-column: 8;
     grid-column: 8;
   }
-  body main .second {
-    display: -ms-grid;
-    display: grid;
-    -ms-grid-columns: (1fr)[6];
-        grid-template-columns: repeat(6, 1fr);
+  body main #details {
+    width: 70%;
   }
-  body main .second img {
-    width: 150px;
-    height: 130px;
-    -ms-grid-column: 3;
-    -ms-grid-column-span: 1;
-    grid-column: 3/4;
-    margin-bottom: 0.9  rem;
+  body main #details p {
+    font-size: 1.7rem;
+    margin-left: 2rem;
+    text-decoration: underline;
   }
-  body main .second div {
-    width: auto;
-    -ms-grid-column: 4;
-    -ms-grid-column-span: 1;
-    grid-column: 4/5;
+  body main #details form {
+    font-size: 1.5rem;
   }
-  body main .second div p {
-    font-size: 0.9rem;
-    margin-bottom: 0.4rem;
+  body main #details form textarea {
+    border-radius: 5% 45%;
+    margin-left: 3rem;
   }
   body main .about .innerText {
     font-size: 2rem;
@@ -765,23 +700,8 @@ body #details textarea {
     width: 40%;
     height: 60vh;
   }
-  body main .tech div img {
+  body main .tech .t-d img {
     width: 190px;
-  }
-  body main #details {
-    width: 70%;
-  }
-  body main #details p {
-    font-size: 1.7rem;
-    margin-left: 2rem;
-    text-decoration: underline;
-  }
-  body main #details form {
-    font-size: 1.5rem;
-  }
-  body main #details form textarea {
-    border-radius: 5% 45%;
-    margin-left: 3rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
