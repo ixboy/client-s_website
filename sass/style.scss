@@ -438,6 +438,10 @@ body {
       margin-bottom: 5px;
       background-color: #34373d;
     }
+    textarea{
+      border-radius: 0% 50% 0% 30%;
+    }
+
   }
 
   // Media Query
@@ -711,31 +715,22 @@ body {
 
         #details {
           width: 70%;
-         
-          & * {
-            margin: 1rem 0 0 1rem;
-            color: $grayish;
-            // font-size: 1rem;
+
+          p{
+            font-size: 1.7rem;
+            margin-left: 2rem;
+            text-decoration: underline;
           }
-          form input[type="email"],
-          input,
-          #services,
-          textarea {
-            width: 80%;
-            margin-bottom: 5px;
-            background-color: #34373d;
+          
+          form{
+            font-size: 1.5rem;
+
+            textarea{
+              border-radius: 5% 45%;
+              margin-left: 3rem;
+            }
           }
         }
-      
-
-
-
-
-
-
       }
-
-
     }
-
 }

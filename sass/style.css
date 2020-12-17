@@ -495,6 +495,10 @@ body #details textarea {
   background-color: #34373d;
 }
 
+body #details textarea {
+  border-radius: 0% 50% 0% 30%;
+}
+
 @media (min-width: 768px) {
   body #campaign {
     display: inline;
@@ -754,17 +758,17 @@ body #details textarea {
   body main #details {
     width: 70%;
   }
-  body main #details * {
-    margin: 1rem 0 0 1rem;
-    color: #d3d3d3;
+  body main #details p {
+    font-size: 1.7rem;
+    margin-left: 2rem;
+    text-decoration: underline;
   }
-  body main #details form input[type="email"],
-  body main #details input,
-  body main #details #services,
-  body main #details textarea {
-    width: 80%;
-    margin-bottom: 5px;
-    background-color: #34373d;
+  body main #details form {
+    font-size: 1.5rem;
+  }
+  body main #details form textarea {
+    border-radius: 5% 45%;
+    margin-left: 3rem;
   }
 }
 /*# sourceMappingURL=style.css.map */
