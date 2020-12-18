@@ -2,6 +2,8 @@ $primary: #272a31;
 $secondary: #ec5242;
 $grayish: #d3d3d3;
 
+// Global
+
 body {
   margin: 0;
   background-color: #f4f4f4;
@@ -20,7 +22,7 @@ body {
   #campaign {
     color: $secondary;
     border: 5px solid $secondary;
-    display: none;
+    // display: none;
   }
 
   .blacklogo {
@@ -35,7 +37,7 @@ body {
   .quote {
     text-align: center;
     padding: 1rem 0 0.2rem 0;
-    margin: 1rem 0 0 0;
+    margin: 1rem 0.8rem 0.5rem 0;
     font-size: 1.7rem;
   }
 
@@ -47,8 +49,52 @@ body {
     color: $primary;
   }
 
+  .red::after {
+    content: "";
+    margin: 3px auto;
+    width: 50px;
+    display: block;
+    border-bottom: 2px solid $secondary;
+  }
+
+  .gray::after {
+    content: "";
+    margin: 3px auto;
+    width: 50px;
+    display: block;
+    border-bottom: 2px solid $primary;
+  }
+
+  // Tickets Page
+
   .t-ticket {
     color: $primary;
+  }
+
+  .t-row {
+    display: flex;
+    flex-direction: row;
+    // flex-wrap: nowrap;
+    // border: 1px solid #000;
+    flex-basis: 100%;
+    width: 80%;
+
+    div {
+      border-bottom: 1px solid $primary;
+    }
+  }
+
+  .t-column {
+    display: flex;
+    flex-direction: column;
+    // flex-basis: 90%;
+    flex: 1;
+    border: 1px solid $primary;
+    background-color: $grayish;
+
+    div {
+      text-align: center;
+    }
   }
 
   .flex-container {
@@ -59,48 +105,57 @@ body {
     margin: 1rem auto;
   }
 
-  .grid-container {
-    margin: 1rem auto;
-    display: grid;
-    grid-template-columns: repeat(9, 1fr);
-    grid-gap: 5px;
-  }
+  // .iFlex-container {
+  //   display: flex;
+  //   flex-wrap: nowrap;
 
-  .box1 {
-    grid-column: 1/2;
-  }
+  //   div{
+  //     min-width: 20%;
+  //     border: 1px solid #000;
 
-  .box2 {
-    grid-column: 2/4;
-  }
+  //   //   display: flex;
+  //   //   flex-direction: column;
+  //   //   justify-content: center;
+  //   //   align-items: center;
+  //   // // border: 1px solid #000;
 
-  .box3 {
-    grid-column: 4/8;
-  }
+  //   }
+  // }
 
-  .box4 {
-    grid-column: 8/10;
-  }
+  // .box1 {
+  //   grid-column: 1/10;
+  //   display: flex;
+  // }
 
-  .box{
-    grid-column: 4/6;
-  }
+  // .box2 {
+  //   grid-column: 2/4;
+  // }
 
-  .boxx{
-    grid-column: 6/8;
-  }
+  // .box3 {
+  //   grid-column: 4/8;
+  // background-color: $secondary;
+  //   p{
+  //   box-sizing: border-box;
+  //   }
+  // }
 
-  .grid-container div {
-    width: 7vw;
-  }
+  // .box4 {
+  //   grid-column: 8/10;
+  // }
 
-  .red::after {
-    content: "";
-    margin: 1px auto;
-    width: 50px;
-    display: block;
-    border-bottom: 2px solid $secondary;
-  }
+  // .box {
+  //   grid-column: 4/6;
+  // }
+
+  // .boxx {
+  //   grid-column: 6/8;
+  // }
+
+  // .grid-container div {
+  //   width: 7vw;
+  // }
+
+  // Home Page
 
   .container {
     background-image: url(../img/whitebackground.png);
@@ -636,7 +691,7 @@ body {
     }
 
     .ourServices {
-      .grid-container {
+      .grid-container0 {
         margin: 1rem auto;
         max-width: 85%;
         display: grid;
