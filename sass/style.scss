@@ -15,6 +15,21 @@ body {
     text-decoration: none;
   }
 
+  .btn-holder{
+    text-align: center;
+  }
+
+  .btn{
+    background-color: $secondary;
+    color: $grayish;
+    margin: 1rem;
+    padding: 00.5rem;
+    line-height: 2;
+    font-weight: bold;
+    border-radius: 1rem;
+    box-shadow: 0 5px 3px #888;
+
+  }
   .current {
     color: $secondary;
   }
@@ -97,12 +112,28 @@ body {
     }
   }
 
+  .packrow{
+    *{
+      height: 100%;
+    }
+  }
+
+  // .centered{
+  //   margin-left: 3rem;
+  // }
+
   .flex-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin: 1rem auto;
+  }
+
+  .centered {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   // .iFlex-container {
@@ -571,6 +602,10 @@ body {
   // Media Query
 
   @media (min-width: 768px) {
+    .centered {
+      display: inline;
+    }
+
     .showcase {
       max-height: 100%;
       display: grid;
