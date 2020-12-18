@@ -47,6 +47,60 @@ body {
     color: $primary;
   }
 
+  .t-ticket {
+    color: $primary;
+  }
+
+  .flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem auto;
+  }
+
+  .grid-container {
+    margin: 1rem auto;
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-gap: 5px;
+  }
+
+  .box1 {
+    grid-column: 1/2;
+  }
+
+  .box2 {
+    grid-column: 2/4;
+  }
+
+  .box3 {
+    grid-column: 4/8;
+  }
+
+  .box4 {
+    grid-column: 8/10;
+  }
+
+  .box{
+    grid-column: 4/6;
+  }
+
+  .boxx{
+    grid-column: 6/8;
+  }
+
+  .grid-container div {
+    width: 7vw;
+  }
+
+  .red::after {
+    content: "";
+    margin: 1px auto;
+    width: 50px;
+    display: block;
+    border-bottom: 2px solid $secondary;
+  }
+
   .container {
     background-image: url(../img/whitebackground.png);
     background-position: center;
@@ -146,7 +200,7 @@ body {
         font-weight: bold;
       }
 
-      div {
+      .h-div {
         margin: 2rem auto;
         width: 90%;
         height: 30%;
