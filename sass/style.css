@@ -31,9 +31,9 @@ body .fab {
 
 body .quote {
   text-align: center;
-  padding: 1rem 0;
-  margin: 1rem 0;
-  font-size: 2rem;
+  padding: 1rem 0 0.2rem 0;
+  margin: 1rem 0 0 0;
+  font-size: 1.7rem;
 }
 
 body body * {
@@ -212,26 +212,17 @@ body main .a-p {
 }
 
 body main .showcase {
+  color: #d3d3d3;
   background-image: url(../img/graybackground.png);
   background-position: center;
-  min-height: 110vh;
+  min-height: 100vh;
   margin-top: 1rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr;
-      grid-template-columns: 1fr;
-}
-
-body main .showcase * {
-  color: #d3d3d3;
-}
-
-body main .showcase h3 {
-  color: #d3d3d3;
 }
 
 body main .showcase div {
-  font-size: 1rem;
+  font-size: 0.8rem;
   background-color: #1a1c2071;
   margin: 0.5rem 0.7rem;
   padding: 0 0.5rem;
@@ -247,37 +238,23 @@ body main .showcase div {
 }
 
 body main .showcase div img {
-  width: 50px;
+  width: 40px;
 }
 
 body main .showcase div h3 {
   -ms-flex-item-align: center;
       -ms-grid-row-align: center;
       align-self: center;
-  max-width: 25%;
   text-align: center;
 }
 
 body main .showcase div a {
   color: #ec5242;
-  font-size: 0.9rem;
+  font-size: 0.6rem;
 }
 
 body main .showcase div p:last-of-type {
   text-align: left;
-  max-width: 40%;
-}
-
-body main .showcase div h5 {
-  padding: 1rem;
-  font-size: 1rem;
-  line-height: 1.3;
-  color: #d3d3d3;
-}
-
-body main .showcase div h5 :last-of-type {
-  background-color: #ec5242;
-  color: #272a31;
 }
 
 body main .showcase #more {
@@ -285,15 +262,12 @@ body main .showcase #more {
   padding: 1rem 3rem;
   border-radius: 5%;
   background-color: #ec5242;
+  max-height: 6vh;
 }
 
-body main .showcase #more h2 {
+body main .showcase #more a {
   margin: auto;
-}
-
-body main .showcase #more h2 * {
-  margin: auto;
-  font-size: 1rem;
+  font-size: 1.3rem;
   color: #d3d3d3;
 }
 
@@ -505,6 +479,76 @@ body #details textarea {
 }
 
 @media (min-width: 768px) {
+  body .showcase {
+    max-height: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[6];
+        grid-template-columns: repeat(6, 1fr);
+  }
+  body .showcase h2 {
+    background-color: transparent !important;
+    text-decoration: underline;
+  }
+  body .showcase .op {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-column: 1/7;
+    -ms-grid-row: 1;
+    -ms-grid-row-span: 1;
+    grid-row: 1/2;
+    margin-bottom: 0;
+  }
+  body .showcase .one {
+    -ms-grid-column: 2;
+    -ms-grid-column-span: 1;
+    grid-column: 2/3;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+  body .showcase .two {
+    -ms-grid-column: 3;
+    -ms-grid-column-span: 1;
+    grid-column: 3/4;
+    -ms-grid-row: 2;
+    -ms-grid-row-span: 1;
+    grid-row: 2/3;
+  }
+  body .showcase .three {
+    -ms-grid-column: 4;
+    -ms-grid-column-span: 1;
+    grid-column: 4/5;
+  }
+  body .showcase .four {
+    -ms-grid-column: 5;
+    -ms-grid-column-span: 1;
+    grid-column: 5/6;
+  }
+  body .showcase #more {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 6;
+    grid-column: 1/7;
+    -ms-grid-row: 4;
+    -ms-grid-row-span: -1;
+    grid-row: 4/3;
+  }
+  body .showcase .i-grid {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 1rem;
+  }
+  body .showcase .i-grid a {
+    font-size: 1rem;
+  }
   body #campaign {
     display: inline;
   }
@@ -542,12 +586,13 @@ body #details textarea {
     height: 100px;
     margin-left: 1rem;
   }
-  body .bottom ul {
+  body .bottom .nav-list {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding-right: 0.5rem;
   }
-  body .bottom ul li a {
+  body .bottom .nav-list li a {
     font-size: 1.5rem;
     margin-right: 1rem;
   }
@@ -559,7 +604,7 @@ body #details textarea {
     max-width: 80%;
   }
   body header h3 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     text-align: left;
   }
   body header h1 {
