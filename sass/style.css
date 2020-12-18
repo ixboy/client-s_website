@@ -10,6 +10,22 @@ body * {
   text-decoration: none;
 }
 
+body .btn-holder {
+  text-align: center;
+}
+
+body .btn {
+  background-color: #ec5242;
+  color: #d3d3d3;
+  margin: 1rem;
+  padding: 00.5rem;
+  line-height: 2;
+  font-weight: bold;
+  border-radius: 1rem;
+  -webkit-box-shadow: 0 5px 3px #888;
+          box-shadow: 0 5px 3px #888;
+}
+
 body .current {
   color: #ec5242;
 }
@@ -99,6 +115,10 @@ body .t-column div {
   text-align: center;
 }
 
+body .packrow * {
+  height: 100%;
+}
+
 body .flex-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -114,6 +134,19 @@ body .flex-container {
       -ms-flex-align: center;
           align-items: center;
   margin: 1rem auto;
+}
+
+body .centered {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 body .container {
@@ -551,6 +584,9 @@ body #details textarea {
 }
 
 @media (min-width: 768px) {
+  body .centered {
+    display: inline;
+  }
   body .showcase {
     max-height: 100%;
     display: -ms-grid;
