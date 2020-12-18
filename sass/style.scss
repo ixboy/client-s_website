@@ -15,11 +15,11 @@ body {
     text-decoration: none;
   }
 
-  .btn-holder{
+  .btn-holder {
     text-align: center;
   }
 
-  .btn{
+  .btn {
     background-color: $secondary;
     color: $grayish;
     margin: 1rem;
@@ -28,8 +28,8 @@ body {
     font-weight: bold;
     border-radius: 1rem;
     box-shadow: 0 5px 3px #888;
-
   }
+
   .current {
     color: $secondary;
   }
@@ -112,8 +112,8 @@ body {
     }
   }
 
-  .packrow{
-    *{
+  .packrow {
+    * {
       height: 100%;
     }
   }
